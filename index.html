@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link
+      href="./Assets/bootstrap-5.3.7-dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero d-flex align-items-center text-center text-white">
+      <div class="overlay"></div>
+      <div class="container position-relative">
+        <h1 class="fade-up display-4 fw-bold">
+          Hi, I am <span class="text-royal">Elizabeth Durojaye</span>
+        </h1>
+        <p class="lead mt-3">
+          A Frontend Developer passionate about creating clean, responsive, and
+          user-friendly websites with
+          <strong>HTML, CSS, and JavaScript</strong>. I love turning ideas into
+          digital experiences that are simple, beautiful, and impactful.
+        </p>
+        <a
+          href="#projects"
+          class="btn btn-royal btn-lg mt-3 fade-up fade-delay-2"
+        >
+          View My Projects
+        </a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center text-center text-lg-start">
+          <div class="col-lg-4 mb-4 mb-lg-0 fade-right">
+            <img
+              src="./Assets/pic.jfif"
+              alt="Elizabeth"
+              class="img-fluid rounded-circle shadow"
+              style="max-width: 250px"
+            />
+          </div>
+
+          <div class="col-md-8 fade-up delay-1">
+            <h2 class="fw-bold mb-3">About Me</h2>
+            <p class="lead">
+              A Frontend Developer who loves bringing ideas to life on the web.
+            </p>
+            <p>
+              I create clean, responsive, and user-friendly websites using
+              <strong>HTML, CSS, JavaScript, and Bootstrap</strong>. My passion
+              is making digital experiences simple, beautiful, and easy for
+              people to use.
+            </p>
+            <p>
+              I started my journey because I have always been curious about how
+              design and technology work together. Since then, I have been
+              building projects, improving my skills, and enjoying the process
+              of turning challenges into solutions.
+            </p>
+            <p>
+              What drives me is the chance to build something that not only
+              works well but also makes people lives easier. I believe in
+              writing code with care, paying attention to details, and always
+              learning something new.
+            </p>
+            <p class="fw-semibold">
+              I am excited to contribute my skills to projects that make a real
+              impact.
+              <a href="#contact" class="text-decoration-none"
+                >Let connect and build something meaningful together!</a
+              >
+            </p>
+          </div>
+
+          <!-- My Skills -->
+          <div class="col-lg-4 fade-left delay-2">
+            <h3 class="fw-semibold mb-3">My Skills</h3>
+            <p class="mb-1">HTML</p>
+            <div class="progress mb-3" style="height: 8px">
+              <div
+                id="htmlBar"
+                class="progress-bar"
+                style="background-color: var(--royal)"
+              ></div>
+            </div>
+
+            <p class="mb-1">CSS / Bootstrap</p>
+            <div class="progress mb-3" style="height: 8px">
+              <div
+                id="cssBar"
+                class="progress-bar"
+                style="background-color: var(--royal)"
+              ></div>
+            </div>
+
+            <p class="mb-1">JavaScript</p>
+            <div class="progress mb-3" style="height: 8px">
+              <div
+                id="jsBar"
+                class="progress-bar"
+                style="background-color: var(--royal)"
+              ></div>
+            </div>
+
+            <p class="mb-1">React</p>
+            <div class="progress mb-3" style="height: 8px">
+              <div
+                id="reactBar"
+                class="progress-bar"
+                style="background-color: var(--royal)"
+              ></div>
+            </div>
+
+            <p class="mb-1">TailwindCSS</p>
+            <div class="progress mb-3" style="height: 8px">
+              <div
+                id="tailwindBar"
+                class="progress-bar"
+                style="background-color: var(--royal)"
+              ></div>
+            </div>
+          </div>
+          <button id="skillBtn" class="btn btn-royal mt-3">
+            Show My Skills
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">My Projects</h2>
+        <p class="lead mb-5">
+          Some of the works I have built and contributed to.
+        </p>
+        <!-- Projects-->
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 shadow-sm border-0">
+              <div class="card-img-wrapper">
+                <img
+                  src="./Assets/screencapture-127-0-0-1-5501-Level-2-Javascript-FoodRestaurant-index-html-2025-09-13-14_51_48.png"
+                  class="card-img-top"
+                  alt="Project 1"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">BREADWRAPZ FOOD</h5>
+                <p class="card-text">
+                  A simple Nigerian food restaurant website built with HTML,
+                  Bootstrap, and vanilla JavaScript. Designed to be responsive,
+                  easy to navigate, and showcase local dishes in a clean and
+                  user-friendly way.
+                </p>
+                <a
+                  href="https://bread-wrapz.vercel.app/"
+                  class="btn btn-royal"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 shadow-sm border-0">
+              <div class="card-img-wrapper">
+                <img
+                  src="./Assets/print.png"
+                  class="card-img-top"
+                  alt="Project 2"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">PRINTIVO</h5>
+                <p class="card-text">
+                  A Printivo cloning app built with HTML and CSS. The project
+                  focuses on clean design, responsive layout, and recreating the
+                  look and feel of the original platform while keeping the code
+                  simple and structured.
+                </p>
+                <a
+                  href="https://printivo-seven.vercel.app/"
+                  class="btn btn-royal"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 shadow-sm border-0">
+              <div class="card-img-wrapper">
+                <img
+                  src="./Assets/emer.png"
+                  class="card-img-top"
+                  alt="Project 3"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">EMERGENCY APP</h5>
+                <p class="card-text">
+                  A fire emergency app built with HTML and CSS. Designed with a
+                  clean and responsive layout to provide quick access to
+                  essential information in case of emergencies.
+                </p>
+                <a
+                  href="https://emergency-resolver.vercel.app/"
+                  class="btn btn-royal"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Get In Touch</h2>
+        <p class="lead mb-5">
+          I will love to collaborate or answer any questions you may have.
+        </p>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/mnnbyven"
+              method="POST"
+            >
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                  name="message"
+                  id="message"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                id="sendBtn"
+                class="btn btn-royal btn-lg w-100"
+              >
+                Send Message
+              </button>
+              <p id="status" class="mt-3 text-center fw-bold"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-center text-white py-4 mt-5">
+      <div class="container">
+        <p class="mb-2">&copy; 2025 Elizabeth. All rights reserved.</p>
+
+        <div class="mb-3">
+          <a href="#hero" class="text-white text-decoration-none me-3">Home</a>
+          <a href="#about" class="text-white text-decoration-none me-3"
+            >About</a
+          >
+          <a href="#projects" class="text-white text-decoration-none me-3"
+            >Projects</a
+          >
+          <a href="#contact" class="text-white text-decoration-none">Contact</a>
+        </div>
+
+        <div>
+          <a href="https://github.com/bethosin" class="text-white me-3 fs-5"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/elizabeth-durojaye-9aa648275"
+            class="text-white me-3 fs-5"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:lizzytod@gmail.com" class="text-white fs-5"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/2348107851093"
+      target="_blank"
+      class="btn btn-success whatsapp-btn"
+    >
+      <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+    <!-- Bootstrap JS -->
+    <script src="./Assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
