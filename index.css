@@ -45,7 +45,7 @@
         color: #222;
       }
 
-      h1,
+      /* h1,
       h2,
       h3,
       h4,
@@ -55,9 +55,9 @@
         font-weight: 700;
         color: var(--royal);
         letter-spacing: 0.5px;
-      }
+      } */
 
-      p {
+       p {
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         line-height: 1.7;
