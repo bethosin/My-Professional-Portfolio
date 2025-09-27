@@ -36,9 +36,6 @@ const sendMessage = async () => {
     document.getElementById(
       "status"
     ).innerHTML = `Thank you <strong>${name}</strong>, your message has been sent successfully!`;
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
     form.reset();
   } else {
     document.getElementById("status").innerHTML =
