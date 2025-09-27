@@ -1,0 +1,6 @@
+{
+  "explorer.fileNesting.enabled": false,
+  "debug.openExplorerOnEnd": false,
+  "zenMode.hideActivityBar": false,
+  "terminal.integrated.tabs.defaultIcon": "terminal"
+}
