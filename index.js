@@ -22,9 +22,6 @@ const sendMessage = async () => {
   if (!name || !email || !message) {
     return alert("⚠️ Please fill in all fields before sending your message.");
   } 
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
   
 
   let data = new FormData(form);
@@ -39,6 +36,9 @@ const sendMessage = async () => {
     document.getElementById(
       "status"
     ).innerHTML = `Thank you <strong>${name}</strong>, your message has been sent successfully!`;
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
     form.reset();
   } else {
     document.getElementById("status").innerHTML =
