@@ -21,11 +21,11 @@ const sendMessage = async () => {
 
   if (!name || !email || !message) {
     return alert("⚠️ Please fill in all fields before sending your message.");
-  } else {
+  } 
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
-  }
+  
 
   let data = new FormData(form);
 
