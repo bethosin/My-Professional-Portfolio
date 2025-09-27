@@ -21,6 +21,10 @@ const sendMessage = async () => {
 
   if (!name || !email || !message) {
     return alert("⚠️ Please fill in all fields before sending your message.");
+  } else {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
   }
 
   let data = new FormData(form);
@@ -32,10 +36,13 @@ const sendMessage = async () => {
   });
 
   if (response.ok) {
-    status.innerHTML = "✅ Message sent successfully!";
+    document.getElementById(
+      "status"
+    ).innerHTML = `Thank you <strong>${name}</strong>, your message has been sent successfully!`;
     form.reset();
   } else {
-    status.innerHTML = "❌ Oops! Something went wrong.";
+    document.getElementById("status").innerHTML =
+      "❌ Oops! Something went wrong. Please try again.";
   }
 };
 
