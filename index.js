@@ -8,8 +8,12 @@ const animateSkills = () => {
   document.getElementById("htmlBar").style.width = "90%";
   document.getElementById("cssBar").style.width = "80%";
   document.getElementById("jsBar").style.width = "70%";
-  document.getElementById("reactBar").style.width = "60%";
+  document.getElementById("reactBar").style.width = "80%";
   document.getElementById("tailwindBar").style.width = "65%";
+  document.getElementById("firebaseBar").style.width = "80%";
+  document.getElementById("nodeBar").style.width = "75%";
+  document.getElementById("expressBar").style.width = "85%";
+  document.getElementById("mongodbBar").style.width = "84%";
 };
 
 const sendMessage = async () => {
